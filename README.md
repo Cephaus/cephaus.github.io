@@ -4,7 +4,7 @@ I decided tp use Bootstrap to get me started revamping my website so I could dis
 
 If you have a moment check it out!
 
-https://cephaus.github.io/
+https://cephaus.github.io/Portfolio/
 
 Also here is a link if you are interested in creating a website using Boostrap:
 
