@@ -9,3 +9,8 @@ https://cephaus.github.io/Portfolio/
 Also here is a link if you are interested in creating a website using Boostrap:
 
 https://getbootstrap.com/
+
+
+<video = id="video" autoplay loop muted> 
+            <source src="waves.mp4" type="video/mp4">
+        </video>
