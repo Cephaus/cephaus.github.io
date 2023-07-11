@@ -1,0 +1,20 @@
+@font-face {
+		font-family: 'FredokaOne-Regular'; /*a name to be used later*/
+    src: url('assets/fonts/FredokaOne-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+	font-family: 'ASAP-SemiBold';
+    src: url('https://studiosyro.com/fonts/Asap-SemiBold.ttf');
+}
+@font-face {
+	font-family: 'DIN-Next';
+    src: url('https://studiosyro.com/fonts/DINNext.ttf');
+}
+
+body {font-family: "FredokaOne-Regular", sans-serif; background-color:#131824; color: white;}
+
+
+h1,h2,h3,h4,h5,h6 {font-family: "ASAP-SemiBold", sans-serif; color: white;}
+.nav,.nav-link,.h3,.nav-item,hr,p,a,li,div {font-family: "DIN-Next", sans-serif; color: white;}
+
