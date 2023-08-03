@@ -12,9 +12,9 @@
     src: url('https://studiosyro.com/fonts/DINNext.ttf');
 }
 
-body {font-family: "FredokaOne-Regular", sans-serif; background-color:black; /*background-color:#131824;*/ color: white;}
+body {/*font-family: "FredokaOne-Regular"*/, sans-serif; background-color:black; /*background-color:#131824;*/ color: white;}
 
 
-h1,h2,h3,h4,h5,h6 {font-family: "ASAP-SemiBold", sans-serif; color: white;}
-.nav,.nav-link,.h3,.nav-item,hr,p,a,li,div {font-family: "DIN-Next", sans-serif; color: white;}
+h1,h2,h3,h4,h5,h6 {/*font-family: "ASAP-SemiBold"*/, sans-serif; color: white;}
+.nav,.nav-link,.h3,.nav-item,hr,p,a,li,div {/*font-family: "DIN-Next"*/, sans-serif; color: white;}
 
