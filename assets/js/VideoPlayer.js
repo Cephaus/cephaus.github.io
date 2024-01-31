@@ -8,7 +8,7 @@ function OpenVideo() {
     var thumbnail = document.getElementById('videoThumbnail');
 
     // Set the video source and load the video
-    video.querySelector('source').src = "https://peterariet.com/assets/StudioSyro/Videos/TFSIC.mp4";
+    video.querySelector('source').src = "https://peterariet.com/assets/StudioSyro/Videos/TFSIC.m4v";
     video.load();
 
     // Hide the thumbnail and show the video
@@ -17,6 +17,8 @@ function OpenVideo() {
 
     // Set the volume to 50%
     video.volume = 0.5;
+	video.muted = true;
+
 
     // Event listeners for video loading
     video.addEventListener('loadeddata', function() {
