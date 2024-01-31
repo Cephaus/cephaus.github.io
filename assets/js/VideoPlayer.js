@@ -17,7 +17,6 @@ function OpenVideo() {
 
     // Set the volume to 50%
     video.volume = 0.5;
-	video.muted = true;
 
 
     // Event listeners for video loading
