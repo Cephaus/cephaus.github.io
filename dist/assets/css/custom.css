@@ -1,0 +1,29 @@
+.inverted {
+    filter: invert(1);
+}
+
+.inverted img {
+    filter: invert(1);
+}
+.inverted video {
+    filter: invert(1);
+}
+
+#invertColorsButton {
+    background: inherit;
+    border: inherit;
+    color: inherit; /* Change as needed */
+    text-decoration: inherit; /* Makes it look like a link */
+    cursor: inherit;
+    padding: 0;
+    font-family: inherit; /* To match the surrounding text */
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: inherit;
+}
+
+.inverted {
+    filter: invert(1);
+    --bs-body-bg: #000000; /* Set this to the inverted color */
+}
