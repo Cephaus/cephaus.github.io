@@ -3,12 +3,21 @@ document.addEventListener('DOMContentLoaded', function() {
     var playPauseBtn = document.getElementById('playPauseBtn');
 
     playPauseBtn.addEventListener('click', function() {
-        if (video.paused) {
-            video.play().catch(function(error) {
+        // Check if video is already in the process of playing
+        if (video.paused && !video.playPromise) {
+            video.playPromise = video.play();
+            video.playPromise.then(function() {
+                video.playPromise = null;
+            }).catch(function(error) {
                 console.error("Error trying to play the video: ", error);
+                video.playPromise = null;
             });
-        } else {
-            video.pause();
+        } else if (!video.paused && video.playPromise) {
+            video.playPromise.then(function() {
+                video.pause();
+            }).catch(function(error) {
+                console.error("Error occurred after play was called: ", error);
+            });
         }
     });
 });
