@@ -8,7 +8,7 @@ function OpenVideo() {
     var thumbnail = document.getElementById('videoThumbnail');
 
     // Set the video source and load the video
-    video.querySelector('source').src = "assets/StudioSyro/Videos/TFSI_C.mp4";
+    video.querySelector('source').src = "assets/StudioSyro/Videos/TFSIC.mp4";
     video.load();
 
     // Hide the thumbnail and show the video
