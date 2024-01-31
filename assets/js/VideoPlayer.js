@@ -7,8 +7,8 @@ function OpenVideo() {
     var video = document.getElementById('video');
     var thumbnail = document.getElementById('videoThumbnail');
 
-    // Set the video source
-    video.querySelector('source').src = "https://peterariet.com/assets/StudioSyro/Videos/TFSI_C.mp4";
+    // Set the video source and load the video
+    video.querySelector('source').src = "assets/StudioSyro/Videos/TFSI_C.mp4";
     video.load();
 
     // Hide the thumbnail and show the video
@@ -18,25 +18,23 @@ function OpenVideo() {
     // Set the volume to 50%
     video.volume = 0.5;
 
-   // Event listener when video data is loaded
-   video.addEventListener('loadeddata', function() {
-	console.log("Video data has loaded.");
-	});
+    // Event listeners for video loading
+    video.addEventListener('loadeddata', function() {
+        console.log("Video data has loaded.");
+    });
 
-	// Event listener to check if the video can be played
-	video.addEventListener('canplay', function() {
-	console.log("Video can be played.");
-	});
+    video.addEventListener('canplay', function() {
+        console.log("Video can be played.");
+    });
 
-	// Error event listener
-	video.addEventListener('error', function(e) {
-	console.error("Error loading video:", e);
-	});
+    video.addEventListener('error', function(e) {
+        console.error("Error loading video:", e);
+    });
 
-    // Play the video
-    video.play();
+    // Play the video and handle the promise
+    var playPromise = video.play();
 
-	if (playPromise !== undefined) {
+    if (playPromise !== undefined) {
         playPromise.then(function() {
             // Automatic playback started successfully
         }).catch(function(error) {
