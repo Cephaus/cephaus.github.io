@@ -27,3 +27,39 @@
     filter: invert(1);
     --bs-body-bg: #000000; /* Set this to the inverted color */
 }
+
+/* --- */
+
+.videocontainer {
+    width: 100%; /* Adjust as needed */
+    opacity: 1;
+}
+
+.videocontainer img, .videocontainer video {
+    transition: opacity 5s ease-in; /* Adjust time as needed */
+    width: 100%; /* Ensure the image and video are the same size */
+    height: auto;
+    opacity: 1;
+}
+
+#videoContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  #videoThumbnail {
+    transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+    cursor: pointer; /* Changes the cursor to indicate the image is clickable */
+  }
+  
+  #videoThumbnail:hover {
+    opacity: 0.8; /* Slightly reduces the opacity on hover */
+  }
+  

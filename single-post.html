@@ -22,6 +22,7 @@
         <!-- END: Styles -->
         <!-- jQuery -->
         <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="assets/js/VideoPlayer.js"></script>
     </head>
     <body>
         <header class="navbar navbar-top navbar-expand">
@@ -876,11 +877,15 @@
                         <h1 class="h2 mb-n10 show-on-scroll" data-show-duration="200" data-show-distance="10">Tales From Soda Island</h1>
                     </div>
                 </div>
-                <img class="w-100 mb-100 show-on-scroll" src="assets/Studio Syro/TFSI/Images/soda banner.jpg" data-show-duration="800">
-                <!-- <video autoplay muted controls class="w-100 mb-100 show-on-scroll" loop playsinline src="http://peterariet.com/assets/Studio Syro/Videos/TalesFromSodaIslandTrailer_Compressed.mp4" preload="auto" data-show-duration="800" type="video/mp4">
+                <!-- <img class="w-100 mb-100 show-on-scroll" src="assets/StudioSyro/TFSI/Images/soda banner.jpg" data-show-duration="800"> -->
+                <div class="videocontainer">
+                    <span class="card-img" data-cursor-style="cursor-circle" data-cursor-text="play">
+                    <img id="videoThumbnail" src="assets/StudioSyro/TFSI/Images/soda banner.jpg" class="w-100 mb-100 show-on-scroll" data-show-duration="800">
+                <video id="video" controls style="display:none;" src="assets/StudioSyro/Videos/TalesFromSodaIslandTrailer_Compressed.mp4" class="w-100 mb-100" type="video/mp4">
                     Your browser does not support the video tag.
-                </video> -->
-                <!-- <br>
+                </video>
+                </div>
+                 <!-- <br>
                 <button id="playPauseBtn">Play/Pause</button> -->
                 <div class="row justify-content-center gh-1 mb-100">
                     <div class="col-lg-8 post-content">
@@ -891,13 +896,13 @@
                 </div>
                 <div class="row gh-1 gv-1 mb-100">
                     <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="50">
-                        <a href="assets/Studio Syro/TFSI/Images/gifs/Multiverse_Bakery.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
-                            <img src="assets/Studio Syro/TFSI/Images/gifs/Multiverse_Bakery.gif" alt="">
+                        <a href="assets/StudioSyro/TFSI/Images/gifs/Multiverse_Bakery.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
+                            <img src="assets/StudioSyro/TFSI/Images/gifs/Multiverse_Bakery.gif" alt="">
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 show-on-scroll" data-show-duration="500" data-show-delay="150">
-                        <a href="assets/Studio Syro/TFSI/Images/gifs/Neon_Jungle.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
-                            <img src="assets/Studio Syro/TFSI/Images/gifs/Neon_Jungle.gif" alt="">
+                        <a href="assets/StudioSyro/TFSI/Images/gifs/Neon_Jungle.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-1" data-animation-effect="fade">
+                            <img src="assets/StudioSyro/TFSI/Images/gifs/Neon_Jungle.gif" alt="">
                         </a>
                     </div>
                 </div>
@@ -906,24 +911,24 @@
                         <h3>Achievement</h3>
                         <p>This is one of the greatest projects I have had the honor of being a part of. The Soda Island world is a marvelous experience. I call it a “virtual hug”. I promise you, it will improve your wellbeing after you immerse yourself in the playful and thrilling world that is soda island. We had an exceptional team working on this project, under the creative leadership of Simone Fougnier. Thanks to Meta, who recognized our passion utilizing Quill to create content for their platform. We seized the opportunity to make some of the most innovative and creative additions to the expanding world of VR. The series has been recongized by The Venice Film Festival and Siggraph.</p>
                         <h4>Ownership</h4>
-                        <p>At Studio Syro, I led complete project oversight, fostering collaboration across all production levels, from executive producers, director, artists, animators, audio directors, and sound designers. My role involved guiding initial pitches, and collaborating with the director through every stage of the production. I managed the early ideation phases, scriptwriting, storyboarding, development of animatics, rough cuts, leading up to the alpha and final release stages. Leveraging my creative and technical background, I contributed to storytelling and tackled challenges for 3D implementation. Overseeing task management, managing deadlines, and handing all forms communication with key stakeholders for our production were key components that collectively defined my multifaceted role at Studio Syro. Building and hiring the right team was crucial, as was overseeing budgeting, payroll, and legal review processes. I was the primary individual for spatial audio work for each experience and IT support throughout production. I also spent R&D time for technical improvements to our pipeline and software. Simultaneously, I handled various studio obligations related to running a business.
+                        <p>At StudioSyro, I led complete project oversight, fostering collaboration across all production levels, from executive producers, director, artists, animators, audio directors, and sound designers. My role involved guiding initial pitches, and collaborating with the director through every stage of the production. I managed the early ideation phases, scriptwriting, storyboarding, development of animatics, rough cuts, leading up to the alpha and final release stages. Leveraging my creative and technical background, I contributed to storytelling and tackled challenges for 3D implementation. Overseeing task management, managing deadlines, and handing all forms communication with key stakeholders for our production were key components that collectively defined my multifaceted role at Studio Syro. Building and hiring the right team was crucial, as was overseeing budgeting, payroll, and legal review processes. I was the primary individual for spatial audio work for each experience and IT support throughout production. I also spent R&D time for technical improvements to our pipeline and software. Simultaneously, I handled various studio obligations related to running a business.
                         </p>
                     </div>
                 </div>
                 <div class="row gh-1 gv-1 mb-100">
                     <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-delay="50">
-                        <a href="assets/Studio Syro/TFSI/Images/gifs/QuantumRacers.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-2" data-animation-effect="fade">
-                            <img src="assets/Studio Syro/TFSI/Images/gifs/QuantumRacers.gif" alt="">
+                        <a href="assets/StudioSyro/TFSI/Images/gifs/QuantumRacers.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-2" data-animation-effect="fade">
+                            <img src="assets/StudioSyro/TFSI/Images/gifs/QuantumRacers.gif" alt="">
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-delay="150">
-                        <a href="assets/Studio Syro/TFSI/Images/gifs/goldenrecord_edit_2.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-2" data-animation-effect="fade">
-                            <img src="assets/Studio Syro/TFSI/Images/gifs/goldenrecord_edit_2.gif" alt="">
+                        <a href="assets/StudioSyro/TFSI/Images/gifs/goldenrecord_edit_2.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-2" data-animation-effect="fade">
+                            <img src="assets/StudioSyro/TFSI/Images/gifs/goldenrecord_edit_2.gif" alt="">
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 show-on-scroll" data-show-duration="500" data-show-delay="250">
-                        <a href="assets/Studio Syro/TFSI/Images/gifs/The_First_Ingredient_Trailer_edit.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-2" data-animation-effect="fade">
-                            <img src="assets/Studio Syro/TFSI/Images/gifs/The_First_Ingredient_Trailer_edit.gif" alt="">
+                        <a href="assets/StudioSyro/TFSI/Images/gifs/The_First_Ingredient_Trailer_edit.gif" class="gallery-item gallery-item-lg" data-fancybox="gallery-2" data-animation-effect="fade">
+                            <img src="assets/StudioSyro/TFSI/Images/gifs/The_First_Ingredient_Trailer_edit.gif" alt="">
                         </a>
                     </div>
                 </div>
