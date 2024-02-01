@@ -32,11 +32,11 @@ function OpenVideo() {
         console.error("Error loading video:", e);
     });
 
-	video.addEventListener('ended', function() {
-        // When the video ends, hide the video and show the thumbnail
-        video.style.display = 'none';
-        thumbnail.style.display = 'block';
-    });
+	// video.addEventListener('ended', function() {
+    //     // When the video ends, hide the video and show the thumbnail
+    //     video.style.display = 'none';
+    //     thumbnail.style.display = 'block';
+    // });
 
     // Play the video and handle the promise
     var playPromise = video.play();
