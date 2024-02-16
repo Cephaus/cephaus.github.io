@@ -63,3 +63,32 @@
     opacity: 0.8; /* Slightly reduces the opacity on hover */
   }
   
+  #job-title {
+    display: inline-block;
+    backface-visibility: hidden;
+  }
+  
+  /* Adjust keyframes to ensure opacity is 0 at the halfway point */
+  @keyframes flip {
+    0% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+    75% {
+      transform: rotateX(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .fade-out {
+    animation: flip 0.5s forwards;
+  }
+  
